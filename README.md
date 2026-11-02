@@ -1,11 +1,26 @@
-<div align="center">
+# 고전의 서재 100 — 맞춤형 고전문학 큐레이션 & 독서 아카이브 (단일 HTML 버전)
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+프레임워크(React, Vue, Vite 등)나 `npm`, `build` 과정 없이 오직 **`index.html` 단 하나의 파일**로 완성된 순수 HTML + CSS + Vanilla JavaScript 웹 애플리케이션입니다.
 
-  <h1>Built with AI Studio</h2>
+## 실행 및 배포 방법
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+### 1. 내 컴퓨터에서 바로 실행하기
+- 다운로드한 **`index.html` 파일을 더블 클릭**하면 어떤 브라우저(Chrome, Edge, Safari 등)에서든 별도의 서버나 설치 없이 즉시 실행됩니다 (`file://` 프로토콜 완벽 지원).
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+### 2. GitHub 업로드 및 Vercel 즉시 배포
+1. GitHub에 새 저장소(Repository)를 만들고 **`index.html` 파일 하나만 업로드**합니다.
+2. [Vercel](https://vercel.com/)에 로그인한 뒤 **Add New... → Project**를 클릭합니다.
+3. 방금 만든 GitHub 저장소를 **Import**하고 아무 설정 변경 없이 **Deploy** 버튼을 누르면 즉시 배포가 완료됩니다 (Framework Preset: `Other` 자동 인식).
 
-</div>
+### 3. GitHub Pages로 배포하기
+1. `index.html`이 업로드된 GitHub 저장소의 **Settings → Pages** 메뉴로 이동합니다.
+2. **Build and deployment → Source**를 `Deploy from a branch`로 두고, Branch를 `main` / `/(root)`로 선택한 뒤 **Save**를 누르면 즉시 웹사이트가 생성됩니다.
+
+---
+
+## 주요 기능
+- **맞춤형 고전문학 큐레이션 (5문항 설문)**: 서사 정서·갈등 축·배경·문체·분량 선호도에 따라 100선 중 가장 잘 맞는 상위 5권을 추천 지수(%)와 선정 사유와 함께 제시
+- **6대 기관 통합 고전문학 100선 전권 도록**: 서울대·고려대·연세대·미국 대학위원회·뉴욕타임스·랜덤하우스 선정 100선 전권 수록, 초성/기관/갈래 필터 및 검색
+- **3단 줄거리 요약 모달**: 모든 100권 도서의 **발단(기) · 전개와 절정(승·전) · 결말(결)** 줄거리 요약, 대표 명문장, 문학사적 의의 수록
+- **나의 독서 기록장**: 완독/독서 중/읽고 싶은 책 상태 관리, 별점, 인상 깊은 문장, 감상평 저장(`localStorage` 자동 보존) 및 커뮤니티 원클릭 공유
+- **독서 담론 & 모임 커뮤니티**: 감상평 공유 게시판(공감·독서록 연동) 및 고전 함께 읽기 독서 모임 개설·참여
